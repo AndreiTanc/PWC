@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FCABD7D5288569000002A63E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD7D4288569000002A63E /* AppDelegate.swift */; };
 		FCABD7D7288569000002A63E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD7D6288569000002A63E /* SceneDelegate.swift */; };
-		FCABD7D9288569000002A63E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD7D8288569000002A63E /* ViewController.swift */; };
 		FCABD7DE288569010002A63E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCABD7DD288569010002A63E /* Assets.xcassets */; };
 		FCABD7E1288569010002A63E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCABD7DF288569010002A63E /* LaunchScreen.storyboard */; };
 		FCABD7E9288570A10002A63E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD7E8288570A10002A63E /* Router.swift */; };
@@ -19,13 +18,19 @@
 		FCABD7F2288571320002A63E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD7F1288571320002A63E /* ViewModel.swift */; };
 		FCABD7F4288571950002A63E /* RootNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD7F3288571950002A63E /* RootNavigationView.swift */; };
 		FCABD7F7288571AB0002A63E /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = FCABD7F6288571AB0002A63E /* Introspect */; };
+		FCABD7FF288580DE0002A63E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FCABD7FE288580DE0002A63E /* Alamofire */; };
+		FCABD802288580EC0002A63E /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = FCABD801288580EC0002A63E /* AlamofireImage */; };
+		FCABD805288581060002A63E /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = FCABD804288581060002A63E /* SwiftMessages */; };
+		FCABD807288581410002A63E /* NavBarHiddenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD806288581410002A63E /* NavBarHiddenView.swift */; };
+		FCABD809288581630002A63E /* NavBarConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD808288581630002A63E /* NavBarConfigurableView.swift */; };
+		FCABD80D288581BF0002A63E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD80C288581BF0002A63E /* Constants.swift */; };
+		FCABD80F288582540002A63E /* UIColor + Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD80E288582540002A63E /* UIColor + Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FCABD7D1288569000002A63E /* PWC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PWC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCABD7D4288569000002A63E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCABD7D6288569000002A63E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FCABD7D8288569000002A63E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FCABD7DD288569010002A63E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCABD7E0288569010002A63E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCABD7E2288569010002A63E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +40,10 @@
 		FCABD7EF288571050002A63E /* RoutesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesFactory.swift; sourceTree = "<group>"; };
 		FCABD7F1288571320002A63E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		FCABD7F3288571950002A63E /* RootNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationView.swift; sourceTree = "<group>"; };
+		FCABD806288581410002A63E /* NavBarHiddenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarHiddenView.swift; sourceTree = "<group>"; };
+		FCABD808288581630002A63E /* NavBarConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarConfigurableView.swift; sourceTree = "<group>"; };
+		FCABD80C288581BF0002A63E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FCABD80E288582540002A63E /* UIColor + Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Colors.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCABD7F7288571AB0002A63E /* Introspect in Frameworks */,
+				FCABD7FF288580DE0002A63E /* Alamofire in Frameworks */,
+				FCABD805288581060002A63E /* SwiftMessages in Frameworks */,
+				FCABD802288580EC0002A63E /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,17 +80,17 @@
 		FCABD7D3288569000002A63E /* PWC */ = {
 			isa = PBXGroup;
 			children = (
-				FCABD7EA288570D60002A63E /* AppFlow */,
 				FCABD7D4288569000002A63E /* AppDelegate.swift */,
 				FCABD7D6288569000002A63E /* SceneDelegate.swift */,
-				FCABD7E8288570A10002A63E /* Router.swift */,
-				FCABD7F3288571950002A63E /* RootNavigationView.swift */,
-				FCABD7EF288571050002A63E /* RoutesFactory.swift */,
-				FCABD7F1288571320002A63E /* ViewModel.swift */,
-				FCABD7D8288569000002A63E /* ViewController.swift */,
 				FCABD7DD288569010002A63E /* Assets.xcassets */,
 				FCABD7DF288569010002A63E /* LaunchScreen.storyboard */,
 				FCABD7E2288569010002A63E /* Info.plist */,
+				FCABD7FC288580800002A63E /* Networking */,
+				FCABD7EA288570D60002A63E /* AppFlow */,
+				FCABD7FB288580760002A63E /* UIReusable */,
+				FCABD7FA288580710002A63E /* Utils */,
+				FCABD7F92885806C0002A63E /* Model */,
+				FCABD7F8288580560002A63E /* Navigation */,
 			);
 			path = PWC;
 			sourceTree = "<group>";
@@ -90,6 +102,49 @@
 				FCABD7ED288570EA0002A63E /* LandingViewModel.swift */,
 			);
 			path = AppFlow;
+			sourceTree = "<group>";
+		};
+		FCABD7F8288580560002A63E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				FCABD7E8288570A10002A63E /* Router.swift */,
+				FCABD7F3288571950002A63E /* RootNavigationView.swift */,
+				FCABD7EF288571050002A63E /* RoutesFactory.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		FCABD7F92885806C0002A63E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FCABD7F1288571320002A63E /* ViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCABD7FA288580710002A63E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FCABD80C288581BF0002A63E /* Constants.swift */,
+				FCABD80E288582540002A63E /* UIColor + Colors.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FCABD7FB288580760002A63E /* UIReusable */ = {
+			isa = PBXGroup;
+			children = (
+				FCABD808288581630002A63E /* NavBarConfigurableView.swift */,
+				FCABD806288581410002A63E /* NavBarHiddenView.swift */,
+			);
+			path = UIReusable;
+			sourceTree = "<group>";
+		};
+		FCABD7FC288580800002A63E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,6 +165,9 @@
 			name = PWC;
 			packageProductDependencies = (
 				FCABD7F6288571AB0002A63E /* Introspect */,
+				FCABD7FE288580DE0002A63E /* Alamofire */,
+				FCABD801288580EC0002A63E /* AlamofireImage */,
+				FCABD804288581060002A63E /* SwiftMessages */,
 			);
 			productName = PWC;
 			productReference = FCABD7D1288569000002A63E /* PWC.app */;
@@ -141,6 +199,9 @@
 			mainGroup = FCABD7C8288569000002A63E;
 			packageReferences = (
 				FCABD7F5288571AB0002A63E /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				FCABD7FD288580DE0002A63E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FCABD800288580EC0002A63E /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+				FCABD803288581060002A63E /* XCRemoteSwiftPackageReference "SwiftMessages" */,
 			);
 			productRefGroup = FCABD7D2288569000002A63E /* Products */;
 			projectDirPath = "";
@@ -172,11 +233,14 @@
 				FCABD7EC288570E30002A63E /* LandingView.swift in Sources */,
 				FCABD7F0288571050002A63E /* RoutesFactory.swift in Sources */,
 				FCABD7F4288571950002A63E /* RootNavigationView.swift in Sources */,
-				FCABD7D9288569000002A63E /* ViewController.swift in Sources */,
+				FCABD807288581410002A63E /* NavBarHiddenView.swift in Sources */,
 				FCABD7D5288569000002A63E /* AppDelegate.swift in Sources */,
 				FCABD7EE288570EA0002A63E /* LandingViewModel.swift in Sources */,
 				FCABD7F2288571320002A63E /* ViewModel.swift in Sources */,
 				FCABD7D7288569000002A63E /* SceneDelegate.swift in Sources */,
+				FCABD809288581630002A63E /* NavBarConfigurableView.swift in Sources */,
+				FCABD80D288581BF0002A63E /* Constants.swift in Sources */,
+				FCABD80F288582540002A63E /* UIColor + Colors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +458,30 @@
 				kind = branch;
 			};
 		};
+		FCABD7FD288580DE0002A63E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		FCABD800288580EC0002A63E /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		FCABD803288581060002A63E /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -401,6 +489,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FCABD7F5288571AB0002A63E /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
 			productName = Introspect;
+		};
+		FCABD7FE288580DE0002A63E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCABD7FD288580DE0002A63E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FCABD801288580EC0002A63E /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCABD800288580EC0002A63E /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+		FCABD804288581060002A63E /* SwiftMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FCABD803288581060002A63E /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = SwiftMessages;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
