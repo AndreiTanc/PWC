@@ -1,6 +1,33 @@
 {
   "pins" : [
     {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire",
+      "state" : {
+        "branch" : "master",
+        "revision" : "8dd85aee02e39dd280c75eef88ffdb86eed4b07b"
+      }
+    },
+    {
+      "identity" : "alamofireimage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/AlamofireImage",
+      "state" : {
+        "branch" : "master",
+        "revision" : "af1c41645ef2d3ab48ffb3fb3a11941c71e5f9a0"
+      }
+    },
+    {
+      "identity" : "swiftmessages",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftKickMobile/SwiftMessages",
+      "state" : {
+        "branch" : "master",
+        "revision" : "4e49214f64f949cc00af225e1f6f4457f6fd62d5"
+      }
+    },
+    {
       "identity" : "swiftui-introspect",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/siteline/SwiftUI-Introspect",
