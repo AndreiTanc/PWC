@@ -25,6 +25,30 @@
 		FCABD809288581630002A63E /* NavBarConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD808288581630002A63E /* NavBarConfigurableView.swift */; };
 		FCABD80D288581BF0002A63E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD80C288581BF0002A63E /* Constants.swift */; };
 		FCABD80F288582540002A63E /* UIColor + Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD80E288582540002A63E /* UIColor + Colors.swift */; };
+		FCABD812288583100002A63E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD811288583100002A63E /* Data.swift */; };
+		FCABD814288583160002A63E /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD813288583160002A63E /* Encodable.swift */; };
+		FCABD816288583190002A63E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD815288583190002A63E /* File.swift */; };
+		FCABD81E288583B80002A63E /* WeakObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD81D288583B80002A63E /* WeakObject.swift */; };
+		FCABD820288583CC0002A63E /* AssetLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD81F288583CC0002A63E /* AssetLoadable.swift */; };
+		FCABD822288583DE0002A63E /* AssetLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD821288583DE0002A63E /* AssetLoader.swift */; };
+		FCABD824288583ED0002A63E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD823288583ED0002A63E /* ImageLoader.swift */; };
+		FCABD826288584070002A63E /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD825288584070002A63E /* UserDefaults.swift */; };
+		FCABD828288584260002A63E /* RefreshTokenMechanismDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD827288584260002A63E /* RefreshTokenMechanismDataProvider.swift */; };
+		FCABD82A288584400002A63E /* RefreshTokenProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD829288584400002A63E /* RefreshTokenProvider.swift */; };
+		FCABD82C288584560002A63E /* RefreshTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD82B288584560002A63E /* RefreshTokenRequest.swift */; };
+		FCABD82E288584650002A63E /* RefreshTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD82D288584650002A63E /* RefreshTokenResponse.swift */; };
+		FCABD830288584770002A63E /* NetworkingInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD82F288584770002A63E /* NetworkingInterceptor.swift */; };
+		FCABD832288584890002A63E /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD831288584890002A63E /* ApiRequest.swift */; };
+		FCABD834288584940002A63E /* ApiMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD833288584940002A63E /* ApiMethod.swift */; };
+		FCABD836288584A10002A63E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD835288584A10002A63E /* Response.swift */; };
+		FCABD838288584B70002A63E /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD837288584B70002A63E /* ApiError.swift */; };
+		FCABD83A288584DD0002A63E /* RequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD839288584DD0002A63E /* RequestData.swift */; };
+		FCABD83C288584F80002A63E /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD83B288584F80002A63E /* BaseRequest.swift */; };
+		FCABD83E288585090002A63E /* UploadRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD83D288585090002A63E /* UploadRequestData.swift */; };
+		FCABD840288585270002A63E /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD83F288585270002A63E /* Networking.swift */; };
+		FCABD842288585350002A63E /* AlamofireNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD841288585350002A63E /* AlamofireNetworking.swift */; };
+		FCABD8442885854D0002A63E /* JWTRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD8432885854D0002A63E /* JWTRequest.swift */; };
+		FCABD846288585610002A63E /* AppUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD845288585610002A63E /* AppUserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +68,30 @@
 		FCABD808288581630002A63E /* NavBarConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarConfigurableView.swift; sourceTree = "<group>"; };
 		FCABD80C288581BF0002A63E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FCABD80E288582540002A63E /* UIColor + Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor + Colors.swift"; sourceTree = "<group>"; };
+		FCABD811288583100002A63E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		FCABD813288583160002A63E /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		FCABD815288583190002A63E /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		FCABD81D288583B80002A63E /* WeakObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakObject.swift; sourceTree = "<group>"; };
+		FCABD81F288583CC0002A63E /* AssetLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetLoadable.swift; sourceTree = "<group>"; };
+		FCABD821288583DE0002A63E /* AssetLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetLoader.swift; sourceTree = "<group>"; };
+		FCABD823288583ED0002A63E /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		FCABD825288584070002A63E /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		FCABD827288584260002A63E /* RefreshTokenMechanismDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenMechanismDataProvider.swift; sourceTree = "<group>"; };
+		FCABD829288584400002A63E /* RefreshTokenProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenProvider.swift; sourceTree = "<group>"; };
+		FCABD82B288584560002A63E /* RefreshTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenRequest.swift; sourceTree = "<group>"; };
+		FCABD82D288584650002A63E /* RefreshTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenResponse.swift; sourceTree = "<group>"; };
+		FCABD82F288584770002A63E /* NetworkingInterceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingInterceptor.swift; sourceTree = "<group>"; };
+		FCABD831288584890002A63E /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		FCABD833288584940002A63E /* ApiMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMethod.swift; sourceTree = "<group>"; };
+		FCABD835288584A10002A63E /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		FCABD837288584B70002A63E /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		FCABD839288584DD0002A63E /* RequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestData.swift; sourceTree = "<group>"; };
+		FCABD83B288584F80002A63E /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		FCABD83D288585090002A63E /* UploadRequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadRequestData.swift; sourceTree = "<group>"; };
+		FCABD83F288585270002A63E /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		FCABD841288585350002A63E /* AlamofireNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworking.swift; sourceTree = "<group>"; };
+		FCABD8432885854D0002A63E /* JWTRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTRequest.swift; sourceTree = "<group>"; };
+		FCABD845288585610002A63E /* AppUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +191,88 @@
 		FCABD7FC288580800002A63E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				FCABD810288583080002A63E /* Utils */,
+				FCABD8172885834E0002A63E /* WeakObject */,
+				FCABD818288583560002A63E /* ImageLoader */,
+				FCABD8192885835C0002A63E /* Extensions */,
+				FCABD81B2885836A0002A63E /* RefreshToken */,
+				FCABD81A288583630002A63E /* Interceptor */,
+				FCABD81C288583780002A63E /* Models */,
+				FCABD83F288585270002A63E /* Networking.swift */,
+				FCABD841288585350002A63E /* AlamofireNetworking.swift */,
+				FCABD8432885854D0002A63E /* JWTRequest.swift */,
+				FCABD845288585610002A63E /* AppUserDefaults.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		FCABD810288583080002A63E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FCABD811288583100002A63E /* Data.swift */,
+				FCABD813288583160002A63E /* Encodable.swift */,
+				FCABD815288583190002A63E /* File.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FCABD8172885834E0002A63E /* WeakObject */ = {
+			isa = PBXGroup;
+			children = (
+				FCABD81D288583B80002A63E /* WeakObject.swift */,
+			);
+			path = WeakObject;
+			sourceTree = "<group>";
+		};
+		FCABD818288583560002A63E /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				FCABD81F288583CC0002A63E /* AssetLoadable.swift */,
+				FCABD821288583DE0002A63E /* AssetLoader.swift */,
+				FCABD823288583ED0002A63E /* ImageLoader.swift */,
+			);
+			path = ImageLoader;
+			sourceTree = "<group>";
+		};
+		FCABD8192885835C0002A63E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FCABD825288584070002A63E /* UserDefaults.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FCABD81A288583630002A63E /* Interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				FCABD82F288584770002A63E /* NetworkingInterceptor.swift */,
+			);
+			path = Interceptor;
+			sourceTree = "<group>";
+		};
+		FCABD81B2885836A0002A63E /* RefreshToken */ = {
+			isa = PBXGroup;
+			children = (
+				FCABD827288584260002A63E /* RefreshTokenMechanismDataProvider.swift */,
+				FCABD829288584400002A63E /* RefreshTokenProvider.swift */,
+				FCABD82B288584560002A63E /* RefreshTokenRequest.swift */,
+				FCABD82D288584650002A63E /* RefreshTokenResponse.swift */,
+			);
+			path = RefreshToken;
+			sourceTree = "<group>";
+		};
+		FCABD81C288583780002A63E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FCABD831288584890002A63E /* ApiRequest.swift */,
+				FCABD833288584940002A63E /* ApiMethod.swift */,
+				FCABD835288584A10002A63E /* Response.swift */,
+				FCABD837288584B70002A63E /* ApiError.swift */,
+				FCABD839288584DD0002A63E /* RequestData.swift */,
+				FCABD83B288584F80002A63E /* BaseRequest.swift */,
+				FCABD83D288585090002A63E /* UploadRequestData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,17 +357,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCABD832288584890002A63E /* ApiRequest.swift in Sources */,
+				FCABD82C288584560002A63E /* RefreshTokenRequest.swift in Sources */,
+				FCABD834288584940002A63E /* ApiMethod.swift in Sources */,
+				FCABD82A288584400002A63E /* RefreshTokenProvider.swift in Sources */,
+				FCABD846288585610002A63E /* AppUserDefaults.swift in Sources */,
+				FCABD842288585350002A63E /* AlamofireNetworking.swift in Sources */,
+				FCABD83C288584F80002A63E /* BaseRequest.swift in Sources */,
+				FCABD828288584260002A63E /* RefreshTokenMechanismDataProvider.swift in Sources */,
 				FCABD7E9288570A10002A63E /* Router.swift in Sources */,
+				FCABD814288583160002A63E /* Encodable.swift in Sources */,
 				FCABD7EC288570E30002A63E /* LandingView.swift in Sources */,
 				FCABD7F0288571050002A63E /* RoutesFactory.swift in Sources */,
+				FCABD830288584770002A63E /* NetworkingInterceptor.swift in Sources */,
 				FCABD7F4288571950002A63E /* RootNavigationView.swift in Sources */,
+				FCABD840288585270002A63E /* Networking.swift in Sources */,
 				FCABD807288581410002A63E /* NavBarHiddenView.swift in Sources */,
 				FCABD7D5288569000002A63E /* AppDelegate.swift in Sources */,
 				FCABD7EE288570EA0002A63E /* LandingViewModel.swift in Sources */,
 				FCABD7F2288571320002A63E /* ViewModel.swift in Sources */,
+				FCABD82E288584650002A63E /* RefreshTokenResponse.swift in Sources */,
+				FCABD838288584B70002A63E /* ApiError.swift in Sources */,
+				FCABD824288583ED0002A63E /* ImageLoader.swift in Sources */,
+				FCABD822288583DE0002A63E /* AssetLoader.swift in Sources */,
+				FCABD816288583190002A63E /* File.swift in Sources */,
+				FCABD81E288583B80002A63E /* WeakObject.swift in Sources */,
+				FCABD83A288584DD0002A63E /* RequestData.swift in Sources */,
+				FCABD836288584A10002A63E /* Response.swift in Sources */,
+				FCABD812288583100002A63E /* Data.swift in Sources */,
 				FCABD7D7288569000002A63E /* SceneDelegate.swift in Sources */,
+				FCABD83E288585090002A63E /* UploadRequestData.swift in Sources */,
+				FCABD8442885854D0002A63E /* JWTRequest.swift in Sources */,
 				FCABD809288581630002A63E /* NavBarConfigurableView.swift in Sources */,
+				FCABD826288584070002A63E /* UserDefaults.swift in Sources */,
 				FCABD80D288581BF0002A63E /* Constants.swift in Sources */,
+				FCABD820288583CC0002A63E /* AssetLoadable.swift in Sources */,
 				FCABD80F288582540002A63E /* UIColor + Colors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
