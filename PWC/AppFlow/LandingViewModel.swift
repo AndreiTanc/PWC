@@ -8,7 +8,13 @@
 import Foundation
 
 class LandingViewModel: ViewModel {
-    
+    func handleOnAppear() {
+//        if AppUserDefaults.token == nil {
+//            router.initiateAuthenticationRoute()
+//        } else {
+//            fetchData()
+//        }
+    }
 }
 
 extension LandingViewModel {

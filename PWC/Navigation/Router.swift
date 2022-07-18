@@ -9,12 +9,16 @@ import SwiftUI
 
 class Router {
     var window: UIWindow
-
+    private (set) var networking: Networking
+    
     private var navigationController: UINavigationController?
     private var rootType: Any.Type?
     
     init(window: UIWindow) {
         self.window = window
+        
+#warning("Must config after getting data")
+        self.networking = AlamofireNetworking(config: .init(baseUri: ""))
     }
     
     func push(viewController: UIViewController, animated: Bool = true) {

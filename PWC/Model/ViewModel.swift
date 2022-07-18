@@ -10,6 +10,10 @@ import SwiftUI
 class ViewModel: ObservableObject {
     var router: Router
 
+    var networking: Networking {
+        router.networking
+    }
+    
     init(router: Router) {
         self.router = router
     }

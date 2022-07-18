@@ -11,7 +11,31 @@ struct LandingView: View {
     var viewModel: LandingViewModel
 
     var body: some View {
-        Text("Hi")
+        NavBarHiddenView {
+            content
+        }.background(Color(uiColor: .yellowBackground))
+    }
+    
+    var content: some View {
+        VStack {
+            HStack {
+                VStack(alignment: .leading) {
+                    Image("LandingTopImage")
+                    Text("Investing in people. Creating the future")
+                        .foregroundColor(.white)
+                        .font(.footnote)
+                        
+                }
+                Spacer()
+            }.padding()
+            
+            Spacer()
+            
+            Image("LandingLogo")
+            
+            Spacer()
+            Spacer()
+        }.padding()
     }
 }
 
