@@ -1,0 +1,12 @@
+
+Rubicon.xcodeproj/xcuserdata/*
+Rubicon.xcworkspace/xcuserdata/*
+Pods/Pods.xcodeproj/xcuserdata/*
+
+*.DS_Store
+*.xcbkptlist
+*.xcuserstate
+*.xcschememanagement.plist
+/fastlane/report.xml
+fastlane/test_output/report.html
+fastlane/test_output/report.junit
