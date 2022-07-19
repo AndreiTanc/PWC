@@ -36,6 +36,9 @@ struct LandingView: View {
             Spacer()
             Spacer()
         }.padding()
+        .onAppear {
+            viewModel.handleOnAppear()
+        }
     }
 }
 

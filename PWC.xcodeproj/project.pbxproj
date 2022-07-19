@@ -49,6 +49,11 @@
 		FCABD842288585350002A63E /* AlamofireNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD841288585350002A63E /* AlamofireNetworking.swift */; };
 		FCABD8442885854D0002A63E /* JWTRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD8432885854D0002A63E /* JWTRequest.swift */; };
 		FCABD846288585610002A63E /* AppUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD845288585610002A63E /* AppUserDefaults.swift */; };
+		FCABD84C288590190002A63E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD84B288590190002A63E /* LoginView.swift */; };
+		FCABD84E288590200002A63E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD84D288590200002A63E /* LoginViewModel.swift */; };
+		FCABD85028859AF80002A63E /* ImageTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD84F28859AF80002A63E /* ImageTextField.swift */; };
+		FCABD8532885B4D70002A63E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD8522885B4D70002A63E /* RegisterView.swift */; };
+		FCABD8552885B4DF0002A63E /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCABD8542885B4DF0002A63E /* RegisterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +97,11 @@
 		FCABD841288585350002A63E /* AlamofireNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworking.swift; sourceTree = "<group>"; };
 		FCABD8432885854D0002A63E /* JWTRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTRequest.swift; sourceTree = "<group>"; };
 		FCABD845288585610002A63E /* AppUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserDefaults.swift; sourceTree = "<group>"; };
+		FCABD84B288590190002A63E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FCABD84D288590200002A63E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FCABD84F28859AF80002A63E /* ImageTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTextField.swift; sourceTree = "<group>"; };
+		FCABD8522885B4D70002A63E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		FCABD8542885B4DF0002A63E /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,8 +156,9 @@
 		FCABD7EA288570D60002A63E /* AppFlow */ = {
 			isa = PBXGroup;
 			children = (
-				FCABD7EB288570E30002A63E /* LandingView.swift */,
-				FCABD7ED288570EA0002A63E /* LandingViewModel.swift */,
+				FCABD8512885B4CD0002A63E /* Register */,
+				FCABD848288590010002A63E /* Login */,
+				FCABD84728858FF90002A63E /* Landing */,
 			);
 			path = AppFlow;
 			sourceTree = "<group>";
@@ -184,6 +195,7 @@
 			children = (
 				FCABD808288581630002A63E /* NavBarConfigurableView.swift */,
 				FCABD806288581410002A63E /* NavBarHiddenView.swift */,
+				FCABD84F28859AF80002A63E /* ImageTextField.swift */,
 			);
 			path = UIReusable;
 			sourceTree = "<group>";
@@ -275,6 +287,33 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		FCABD84728858FF90002A63E /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				FCABD7EB288570E30002A63E /* LandingView.swift */,
+				FCABD7ED288570EA0002A63E /* LandingViewModel.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		FCABD848288590010002A63E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FCABD84B288590190002A63E /* LoginView.swift */,
+				FCABD84D288590200002A63E /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FCABD8512885B4CD0002A63E /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				FCABD8522885B4D70002A63E /* RegisterView.swift */,
+				FCABD8542885B4DF0002A63E /* RegisterViewModel.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -364,18 +403,22 @@
 				FCABD846288585610002A63E /* AppUserDefaults.swift in Sources */,
 				FCABD842288585350002A63E /* AlamofireNetworking.swift in Sources */,
 				FCABD83C288584F80002A63E /* BaseRequest.swift in Sources */,
+				FCABD85028859AF80002A63E /* ImageTextField.swift in Sources */,
 				FCABD828288584260002A63E /* RefreshTokenMechanismDataProvider.swift in Sources */,
 				FCABD7E9288570A10002A63E /* Router.swift in Sources */,
 				FCABD814288583160002A63E /* Encodable.swift in Sources */,
 				FCABD7EC288570E30002A63E /* LandingView.swift in Sources */,
 				FCABD7F0288571050002A63E /* RoutesFactory.swift in Sources */,
 				FCABD830288584770002A63E /* NetworkingInterceptor.swift in Sources */,
+				FCABD84C288590190002A63E /* LoginView.swift in Sources */,
 				FCABD7F4288571950002A63E /* RootNavigationView.swift in Sources */,
+				FCABD8552885B4DF0002A63E /* RegisterViewModel.swift in Sources */,
 				FCABD840288585270002A63E /* Networking.swift in Sources */,
 				FCABD807288581410002A63E /* NavBarHiddenView.swift in Sources */,
 				FCABD7D5288569000002A63E /* AppDelegate.swift in Sources */,
 				FCABD7EE288570EA0002A63E /* LandingViewModel.swift in Sources */,
 				FCABD7F2288571320002A63E /* ViewModel.swift in Sources */,
+				FCABD8532885B4D70002A63E /* RegisterView.swift in Sources */,
 				FCABD82E288584650002A63E /* RefreshTokenResponse.swift in Sources */,
 				FCABD838288584B70002A63E /* ApiError.swift in Sources */,
 				FCABD824288583ED0002A63E /* ImageLoader.swift in Sources */,
@@ -392,6 +435,7 @@
 				FCABD826288584070002A63E /* UserDefaults.swift in Sources */,
 				FCABD80D288581BF0002A63E /* Constants.swift in Sources */,
 				FCABD820288583CC0002A63E /* AssetLoadable.swift in Sources */,
+				FCABD84E288590200002A63E /* LoginViewModel.swift in Sources */,
 				FCABD80F288582540002A63E /* UIColor + Colors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,7 +575,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J3LJK27C49;
+				DEVELOPMENT_TEAM = 6D7DV8JKPP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PWC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -543,7 +587,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.AndreiTanc.PWC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AndreiTanc.PWCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -558,7 +602,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = J3LJK27C49;
+				DEVELOPMENT_TEAM = 6D7DV8JKPP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PWC/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -570,7 +614,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.AndreiTanc.PWC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AndreiTanc.PWCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -14,6 +14,9 @@ class LandingViewModel: ViewModel {
 //        } else {
 //            fetchData()
 //        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            self.router.push(viewController: RoutesFactory.loginViewController(router: self.router))
+        }
     }
 }
 

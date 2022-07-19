@@ -57,6 +57,18 @@ extension RoutersRoots {
         self.window.rootViewController = nil
         self.window.rootViewController = UIHostingController(rootView: rootView)
     }
+    
+    func instantiateOnboardingRouting() {
+        let loginView = RoutesFactory.loginRouteView(router: self)
+        let rootView = RootNavigationView {
+            loginView
+        } navigationControllerProxy: { navigationController in
+            self.navigationController = navigationController
+        }
+        
+        self.window.rootViewController = nil
+        self.window.rootViewController = UIHostingController(rootView: rootView)
+    }
 }
 
 extension Router {
