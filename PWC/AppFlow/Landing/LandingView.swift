@@ -10,6 +10,11 @@ import SwiftUI
 struct LandingView: View {
     var viewModel: LandingViewModel
 
+    var backgroundColor: Color {
+        AppUserDefaults.isDarkModeEnabled() ? Color(uiColor: .darkModeBackground) :
+                                              Color(uiColor: .yellowBackground)
+    }
+    
     var body: some View {
         NavBarHiddenView {
             content
@@ -34,8 +39,18 @@ struct LandingView: View {
             Image("LandingLogo")
             
             Spacer()
+            
+            Text("Loading").font(.system(size: 20)).fontWeight(.semibold)
+                .foregroundColor(AppUserDefaults.isDarkModeEnabled() ? .white : .black)
+            
+            Text("...").font(.system(size: 60)).padding(.top, -50)
+                .foregroundColor(AppUserDefaults.isDarkModeEnabled() ? .white : .black)
+            
             Spacer()
         }.padding()
+        .onAppear {
+            viewModel.handleOnAppear()
+        }
     }
 }
 
