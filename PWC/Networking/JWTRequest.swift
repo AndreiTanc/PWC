@@ -7,10 +7,17 @@
 
 import Foundation
 
-open class JWTRequest<Response: JWTResponse>: BaseRequest<Response> {
-    override init(headers: [String : String] = [:], parameters: [String : Any] = [:], fetchQueue: NetworkingQueueType = .background, resultQueue: NetworkingQueueType = .main, forceURLEncoding: Bool = false) {
+enum TokenType {
+    case openAccess
+    case loggedUser
+}
+
+open class JWTRequest<Response: PWC.Response>: BaseRequest<Response> {
+    var typeOfToken: TokenType = .openAccess
+        
+    init(headers: [String : String] = [:], parameters: [String : Any] = [:], fetchQueue: NetworkingQueueType = .background, resultQueue: NetworkingQueueType = .main, forceURLEncoding: Bool = false, tokenType: TokenType = .openAccess) {
         super.init(
-            headers: JWTRequest.mutateHeaders(headers: headers),
+            headers: JWTRequest.mutateHeaders(headers: headers, tokenType: tokenType),
             parameters: parameters,
             fetchQueue: fetchQueue,
             resultQueue: resultQueue,
@@ -18,11 +25,18 @@ open class JWTRequest<Response: JWTResponse>: BaseRequest<Response> {
         )
     }
     
-    private class func mutateHeaders(headers: [String: String]) -> [String: String] {
+    private class func mutateHeaders(headers: [String: String], tokenType: TokenType) -> [String: String] {
         var mutableHeaders = headers
-        mutableHeaders["Authorization"] = "Bearer \(AppUserDefaults.token ?? "")"
+        
+        let token: String?
+        switch tokenType {
+        case .openAccess:
+            token = AppUserDefaults.openClientToken
+        case .loggedUser:
+            token = AppUserDefaults.passwordToken
+        }
+        
+        mutableHeaders["Authorization"] = "Bearer \(token ?? "")"
         return mutableHeaders
     }
 }
-
-public class JWTResponse: Response {}

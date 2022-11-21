@@ -11,14 +11,19 @@ struct ImageTextField: View {
     @Binding var text: String
     var imageName: String
     var placeholderText: String
+    var keyboardType: UIKeyboardType = .default
     
     var body: some View {
         HStack {
-            Image(imageName)
+            if imageName != "" {
+                Image(imageName)
+            }
             TextField(placeholderText, text: $text)
+                .disableAutocorrection(true)
+                .keyboardType(keyboardType)
+                .textInputAutocapitalization(.never)
         }
         .padding().background(Color(uiColor: .white))
-        .padding([.leading, .trailing], .generalPadding)
     }
 }
 

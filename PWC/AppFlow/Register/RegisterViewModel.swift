@@ -15,6 +15,30 @@ class RegisterViewModel: ViewModel {
     func goToLogin() {
         router.push(viewController: RoutesFactory.loginViewController(router: router))
     }
+    
+    func handleOnRegisterTapped() {
+        if name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ||
+            email.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ||
+            password.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            
+            print("not ok")
+            return
+        }
+        
+        register()
+    }
+    
+    func register() {
+        let request = RegisterRequest(model: .init(name: name,
+                                                   email: email,
+                                                   password: password))
+        
+        router.networking.call(request: request) { response in
+            print(response)
+        } onError: { error in
+            print(error)
+        }
+    }
 }
 
 extension RegisterViewModel {

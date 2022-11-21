@@ -12,8 +12,16 @@ struct LoginView: View {
     
     var body: some View {
         NavBarHiddenView {
-            content
+            VStack(spacing: 0) {
+                NavBarHeaderView(dismiss: {
+                    viewModel.goBack()
+                }).padding(.top, 1)
+                content
+            }
         }.background(Color(uiColor: .yellowBackground))
+        .onTapGesture {
+            hideKeyboard()
+        }
     }
     
     var content: some View {
@@ -23,6 +31,7 @@ struct LoginView: View {
             
             loginForm
             
+            Spacer()
             HStack {
                 Spacer()
                 VStack(alignment: .trailing) {
@@ -37,11 +46,14 @@ struct LoginView: View {
     
     var loginForm: some View {
         VStack {
-            ImageTextField(text: $viewModel.email, imageName: "Email", placeholderText: "email*")
+            ImageTextField(text: $viewModel.email, imageName: "Email",
+                           placeholderText: "email*", keyboardType: .emailAddress)
+                .padding([.leading, .trailing], .generalPadding)
             ImageTextField(text: $viewModel.password, imageName: "Password", placeholderText: "password*")
+                .padding([.leading, .trailing], .generalPadding)
             
             Button("LOGIN") {
-                print("login")
+                viewModel.login()
             }.frame(maxWidth: .infinity).frame(height: 50).foregroundColor(.white).background(Color(uiColor: .blackButton)).padding(.generalPadding)
             
             HStack {

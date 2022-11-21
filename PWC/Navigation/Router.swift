@@ -17,8 +17,7 @@ class Router {
     init(window: UIWindow) {
         self.window = window
         
-#warning("Must config after getting data")
-        self.networking = AlamofireNetworking(config: .init(baseUri: ""))
+        self.networking = AlamofireNetworking(config: .init(baseUri: Constants.Url.base.rawValue))
     }
     
     func push(viewController: UIViewController, animated: Bool = true) {
@@ -42,6 +41,11 @@ class Router {
     func popToRootViewController(animated: Bool = true) {
         navigationController?.popToRootViewController(animated: animated)
     }
+    
+    func present(viewController: UIViewController, animated: Bool = true, modalPresentationStyle: UIModalPresentationStyle = .overCurrentContext) {
+        navigationController?.modalPresentationStyle = modalPresentationStyle
+        navigationController?.present(viewController, animated: animated)
+    }
 }
 
 private typealias RoutersRoots = Router
@@ -62,6 +66,18 @@ extension RoutersRoots {
         let loginView = RoutesFactory.loginRouteView(router: self)
         let rootView = RootNavigationView {
             loginView
+        } navigationControllerProxy: { navigationController in
+            self.navigationController = navigationController
+        }
+        
+        self.window.rootViewController = nil
+        self.window.rootViewController = UIHostingController(rootView: rootView)
+    }
+    
+    func instantiatePWCRouting() {
+        let mainContainer = RoutesFactory.pwcRouteView(router: self)
+        let rootView = RootNavigationView {
+            mainContainer
         } navigationControllerProxy: { navigationController in
             self.navigationController = navigationController
         }

@@ -41,6 +41,7 @@ extension Bool: PropertyListValue {}
 extension Int: PropertyListValue {}
 extension Double: PropertyListValue {}
 extension Float: PropertyListValue {}
+extension User: PropertyListValue {}
 
 // Every element must be a property-list type
 extension Array: PropertyListValue where Element: PropertyListValue {}

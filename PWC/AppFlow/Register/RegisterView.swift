@@ -12,8 +12,16 @@ struct RegisterView: View {
     
     var body: some View {
         NavBarHiddenView {
-            content
+            VStack(spacing: 0) {
+                NavBarHeaderView(dismiss: {
+                    viewModel.goBack()
+                }).padding(.top, 1)
+                content
+            }
         }.background(Color(uiColor: .yellowBackground))
+        .onTapGesture {
+            hideKeyboard()
+        }
     }
     
     var content: some View {
@@ -23,6 +31,7 @@ struct RegisterView: View {
             
             loginForm
             
+            Spacer()
             HStack {
                 Spacer()
                 VStack(alignment: .trailing) {
@@ -33,16 +42,21 @@ struct RegisterView: View {
                 }
             }.padding()
         }.frame(maxHeight: .infinity)
+        
     }
     
     var loginForm: some View {
         VStack {
-            ImageTextField(text: $viewModel.name, imageName: "Password", placeholderText: "password*")
-            ImageTextField(text: $viewModel.email, imageName: "Email", placeholderText: "email*")
+            ImageTextField(text: $viewModel.name, imageName: "Name", placeholderText: "name*")
+                .padding([.leading, .trailing], .generalPadding)
+            ImageTextField(text: $viewModel.email, imageName: "Email",
+                           placeholderText: "email*", keyboardType: .emailAddress)
+                .padding([.leading, .trailing], .generalPadding)
             ImageTextField(text: $viewModel.password, imageName: "Password", placeholderText: "password*")
+                .padding([.leading, .trailing], .generalPadding)
             
             Button("REGISTER") {
-                print("login")
+                viewModel.handleOnRegisterTapped()
             }.frame(maxWidth: .infinity).frame(height: 50).foregroundColor(.white).background(Color(uiColor: .blackButton)).padding(.generalPadding)
             
             HStack {

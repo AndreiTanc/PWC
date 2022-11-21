@@ -51,7 +51,7 @@ public struct Config {
     }
     
     public static func defaultGlobalHeaders() -> HTTPHeaders {
-        return HTTPHeaders(arrayLiteral: .contentType("application/json"))
+        return HTTPHeaders(arrayLiteral: .init(name: "Accept", value: "application/json"))
     }
 }
 

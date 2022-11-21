@@ -17,4 +17,8 @@ class ViewModel: ObservableObject {
     init(router: Router) {
         self.router = router
     }
+    
+    func goBack() {
+        router.popViewController(animated: true)
+    }
 }
